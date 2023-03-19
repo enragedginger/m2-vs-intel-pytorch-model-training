@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "model-training-test"
+version = "0.1.0"
+description = ""
+authors = ["Stephen Hopper <stephenmhopper@gmail.com>"]
+readme = "README.md"
+packages = [{include = "model_training_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "*"
+torchvision = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
