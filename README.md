@@ -1,17 +1,20 @@
 ## Intel vs M2 Macbook Pytorch Model Training Benchmarks ##
 
-Apple advertises that the M2 has all of these GPU cores that you can use for ML.
-I wanted some basic validation of this claim, but struggled to find any real exploration on this.
+Apple advertises that the M2 GPU cores that you can use for ML.
+I wanted some basic validation of this claim, but struggled to find any real explorations on this.
+
 Pytorch supports training on M1 / M2 GPU cores through MPS.
 I really wanted to kick in the tires on this to see if it's that much faster.
 The goal of this project is to run a few basic Pytorch model training + evaluation samples to compare performance between an early-2023 Macbook with an M2 Max processor and a late-2019 Macbook with an Intel i9 processor.
 Both machines were almost "maxed out" when purchased from Apple.
+
 All code was provided by Bing AI Search because I didn't care enough to write any of this myself.
 The code it produced after the first prompt never worked on the first try.
 But after feeding error messages back to it 2-3 times, it got to the code you see in the repo.
+
 This is about on par with my skills, but Bing AI was much faster.
 
-For the most part, these examples show a 3.5x - 4x speed up on the M2 setup over the Intel setup.
+These examples suggest a 1.7x - 3.5x speed up on the M2 Max over the Intel i9 (2.4 GHz, 8-core).
 
 ## Env Setup ##
 Uses pytorch 2!
